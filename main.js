@@ -13,6 +13,12 @@ window.addEventListener("load", function () {
     const canvas = document.getElementById("canvas1");
     canvas.style.display = "block";
     const ctx = canvas.getContext("2d");
+    let reloadedOnce = false;
+    function reloadOnce() {
+        location.reload();
+        reloadedOnce = true;
+    }
+    if (reloadedOnce = false) reloadOnce();
 
     // By default, canvas will be set to 300 x 150 px so we change the width and height here with the same values set in our style.css file:
     canvas.width = 960;
