@@ -1,0 +1,38 @@
+* {
+    /* Make canvas look good on mobile: */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#canvas1 {
+    border: 5px solid black;
+    display: none;
+    left: 50%;
+
+    /* Make canvas look good on mobile: */
+    max-height: 100%;
+    max-width: 100%;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Creepster", cursive;
+}
+
+/* We bring our images into the project with HTML and use CSS to hide them, as we'll draw and animate them with JS. By including images as img tags we can make sure they are fully loaded before the JS code runs by using "load" event listener */
+img {
+    display: none;
+}
+
+#loading {
+    font-size: 80px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
